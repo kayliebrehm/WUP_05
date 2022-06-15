@@ -9,23 +9,25 @@ output: html_document
 require(tidyverse)
 require(tigerstats)
 triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
+female=filter(triUmp, gender=="F")
 ```
 
-```{r}
-triUmpsalData=read.csv("triUmpsal.csv")
-```
 
 # Introduction
 
+$H_0$: The drug triUmpsal was not effective in preventing females contracting aides.
+
+$H_a$: The drug triUmpsal was effective in preventing females contracting aides.
+
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?.  If you skimp in this section expect to be marked down in your grade. Paint a picture of the project a couple of paragraphs is expected!-->
 
-A new  preventative aides drug (triUmpsal) is under test in clinical trials. Consider only the females, does this drug seem effective?  Hint - use dplyr to obtain that subpopulation with the filter command.
+
 
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
-
+To evaluate the effectiveness of triUmpsal (categorical) in preventing aides in females, we will observe the drug use versus placebo(also categorical). I will use a categorical-categorical set of graphs and charts to analyze the data. I will use a bar chart with a chi-square test, a fisher exact test, and T-test.
 
 # Results
 
@@ -36,6 +38,8 @@ A new  preventative aides drug (triUmpsal) is under test in clinical trials. Con
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
+
+
 
 ### Numerical Descriptive Results
 
