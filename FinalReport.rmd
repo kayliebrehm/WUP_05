@@ -39,7 +39,13 @@ To evaluate the effectiveness of triUmpsal (categorical) in preventing aides in 
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
+```{r}
+barchartGC(~infected + treatment,data=female)
+barchartGC(~infected + treatment,data=female, type="percent")
 
+```
+
+This chart firstly observes two categories, those who got aides and those who didn't. It then shows those who took the drug and those who took the placebo. Finally, it shows the percentage of that data. Overall, the drug seems to make women more susceptible to virus. We see this when we look at those who got aids. The placebo had a lower percentage than the drug. 
 
 ### Numerical Descriptive Results
 
