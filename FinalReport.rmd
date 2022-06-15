@@ -27,7 +27,7 @@ $H_a$: The drug triUmpsal was effective in preventing females contracting aides.
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
-To evaluate the effectiveness of triUmpsal (categorical) in preventing aides in females, we will observe the drug use versus placebo(also categorical). I will use a categorical-categorical set of graphs and charts to analyze the data. I will use a bar chart with a chi-square test, a fisher exact test, and T-test.
+To evaluate the effectiveness of triUmpsal (categorical) in preventing aides in females, we will observe the drug use versus placebo(also categorical). I will use a categorical-categorical set of graphs and charts to analyze the data. I will use a bar chart, a chi-square test, a numerical findings chart, and a fisher exact test.
 
 # Results
 
@@ -63,6 +63,13 @@ It looks like if a female were to get the vaccine, they would be about 1.4 times
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+I reject the null hypothesis due to the p-vale being less than 0.05. The p-value for the chi-squared test is 0.0000768. The p-value for the fisher's exact test is 0.00006596.
 
 # Discussion and Conclusion
 
