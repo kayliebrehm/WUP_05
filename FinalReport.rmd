@@ -74,3 +74,5 @@ I reject the null hypothesis due to the p-vale being less than 0.05. The p-value
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+The original question was "Is the drug triUmpsal effective in preventing females from getting aides?" The null hypothesis was that the drug was not effective in preventing females in getting aides. We can conclude that the drug was not only ineffective in preventing aides in females, but that it actually made them more likely to get aides. 
